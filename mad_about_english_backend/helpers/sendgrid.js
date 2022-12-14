@@ -5,13 +5,13 @@ exports.sendEmail = async (name, email, contact, message) => {
     console.log("entering controller");
     sgMail.setApiKey(process.env.SENDGRID_API_KEY);
     const msg = {
-      to: "beckietan2810@gmail.com", // Change to your recipient Teacher Rebecca
+      to: "1reginacheong@gmail.com",//"beckietan2810@gmail.com", // Change to your recipient Teacher Rebecca
       // to: [
       //   {
       //     email: "1reginacheong@gmail.com",
       //   },
       //   {
-      //     email: `${email}`,
+      //     email: `beckietan2810@gmail.com`,
       //   },
       // ],
       from: "1reginacheong@gmail.com", //Change to your verified sender
