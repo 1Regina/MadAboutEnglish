@@ -75,7 +75,7 @@ const About = () => {
             <p>
               As soon as I could read on my own, I developed a mad passion for
               the English Language. Hence, I thought, what better way to indulge
-              this passion that to intrigue young minds and ignite in them a
+              this passion than to intrigue young minds and ignite in them a
               similar love? Over the course of my 23 years as an English
               language educator, I taught in mainstream schools before crossing
               over to the private education sector where I found my niche.
