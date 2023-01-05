@@ -169,7 +169,7 @@ export default function Classes() {
     <Box paddingTop={15}>
       <Box
         // height='100vh'
-        width={1200}
+        maxWidth={1200}
         // maxWidth={1000}
         // maxHeight={500}
         // alignItems="center"

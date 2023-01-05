@@ -30,6 +30,12 @@ const Home = () => {
           display: "flex",
           flexDirection: "row",
           justifyContent: "center",
+          // alignItems:"center",
+
+          // maxWidth: 600,
+          // maxHeight: 10,
+          // padding: 3,
+          // marginTop: 10,
         }}
       >
         <Box
@@ -46,7 +52,7 @@ const Home = () => {
 
       <Box
         // height='100%'
-        width={1200}
+        maxWidth={1200}
         margin="auto"
         // marginTop={1}
         // padding={3}

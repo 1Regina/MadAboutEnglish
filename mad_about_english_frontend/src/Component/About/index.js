@@ -50,14 +50,14 @@ const About = () => {
 
         <Box
           // height={1000}
-          width={1200}
+          maxWidth={1200}
           // maxWidth={1000}
           // maxHeight={500}
           alignItems="center"
           justifyContent={"center"}
           // margin="auto"
           // marginTop={1}
-          // padding={20}
+          padding={2}
           // borderRadius={5}
           // boxShadow="5px 5px 10px #ccc"
           // sx={{

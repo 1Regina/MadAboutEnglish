@@ -33,7 +33,7 @@ const Events = (props) => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        width: "100vw",
+        width: "95vw",
         // height: "calc(100vh - 80px)",
         top: 75,
 
@@ -67,7 +67,7 @@ const Events = (props) => {
           <div key={step[0]}>
             {Math.abs(activeStep - index) <= maxSteps - 1 ? (
               <Box
-                padding={3}
+                // padding={3}
                 borderRadius={5}
                 border={15}
                 borderColor="rgb(26, 35, 126, 0.2)"
@@ -76,16 +76,20 @@ const Events = (props) => {
                 component="img"
                 sx={{
                   margin: "auto",
-                  // height: "100%",
+                  maxHeight: "58vh",
+                  maxWidth:"70vw",
                   display: "block",
+                  objectFit: "cover",
                   ":hover": {
                     boxShadow: "10px 10px 20px #ccc",
                   },
-                  height: "480px",
+                  // maxHeight: "480px",
+                  // maxWidth: "300px",
                   // marginTop: "50px",
                 }}
                 src={step[1]}
                 alt={step[0]}
+                
               />
             ) : null}
           </div>

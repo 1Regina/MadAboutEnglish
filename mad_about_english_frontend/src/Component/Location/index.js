@@ -99,8 +99,8 @@ const Location = () => {
     <div>
       <Box paddingTop={15}>
         <Box
-          width={1120}
-          // maxWidth={1000}
+          maxWidth={1120}
+          // maxWidth={1100}
           // maxHeight={500}
           // alignItems="center"
           // justifyContent={"center"}
@@ -176,20 +176,20 @@ const Location = () => {
                 top: 70,
                 left: 10,
                 position: "absolute",
-                width: 400,
-                height: 180,
+                maxWidth: 360,
+                maxHeight: 180,
                 backgroundColor: "white",
                 border: 1,
                 borderRadius: 2,
                 borderColor: "action",
                 margin: 1,
-                padding: 4,
+                padding: 2,
                 zIndex: 1,
                 display: "flex",
                 flexDirection: "column",
                 // alignItems: "left",
                 // justifyContent: "left",
-                justifyContent:" center",
+                justifyContent:"center",
                 marginTop:5
               }}
 
@@ -199,6 +199,7 @@ const Location = () => {
                   display: "flex",
                   flexDirection: "row",
                   alignItems: "left",
+                  marginLeft: -1
                 }}
               >
                 <LocationOnIcon
@@ -223,13 +224,13 @@ const Location = () => {
                     variant="outlined"
                     placeholder="Origin"
                     ref={originRef}
-                    size={40}
+                    size={38}
                   ></input>
                 </Autocomplete>
 
                 <CancelPresentationIcon
                   onClick={clearRoute}
-                  sx={{ borderRadius: 3, fontSize: 40, ml: 3 }}
+                  sx={{ borderRadius: 3, fontSize: 35, ml: 1 }}
                   color="action"
                 />
               </Box>
@@ -249,7 +250,7 @@ const Location = () => {
                     map.panTo(center);
                     map.setZoom(15);
                   }}
-                  sx={{ borderRadius: 3, fontSize: 40, ml: 8 }}
+                  sx={{ borderRadius: 3, fontSize: 40, ml: 3 }}
                   color="primary"
                 />
               </Box>
@@ -265,7 +266,7 @@ const Location = () => {
                   sx={{
                     display: "flex",
                     flexDirection: "row",
-                    marginRight: 3,
+                    marginRight: 2,
                   }}
                 >
                   <BlueFont>Distance:</BlueFont>
@@ -275,7 +276,7 @@ const Location = () => {
                   sx={{
                     display: "flex",
                     flexDirection: "row",
-                    marginLeft: 7,
+                    marginLeft: 3,
                   }}
                 >
                   <BlueFont>Duration:</BlueFont>
