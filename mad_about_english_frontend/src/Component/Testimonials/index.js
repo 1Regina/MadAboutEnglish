@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { Box } from "@mui/material";
+import { FormFont } from "../Theme";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -32,6 +33,7 @@ const Testimonials = (props) => {
   const maxSteps = images.length;
 
   return (
+    <>
     <Box
       id="box xxx"
       sx={{
@@ -98,6 +100,18 @@ const Testimonials = (props) => {
         ))}
       </Slider>
     </Box>
+    <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          paddingTop: 5,
+          paddingRight: 2
+        }}
+      >
+        <FormFont>Note: Best viewed from desktop</FormFont>
+      </Box>
+      </>
   );
 };
 
