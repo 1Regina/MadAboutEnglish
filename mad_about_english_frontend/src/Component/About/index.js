@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Avatar, Box, Stack, Typography } from "@mui/material/";
 import { BlueFont } from "../Theme";
+import Footer from "../../Footer";
 
 const About = () => {
   return (
@@ -101,6 +102,7 @@ const About = () => {
             </p>
           </Typography>
         </Box>
+        <Footer />
       </Stack>
     </Box>
   );

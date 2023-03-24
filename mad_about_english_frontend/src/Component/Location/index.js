@@ -13,6 +13,7 @@ import {
 } from "@react-google-maps/api";
 import { BlueFont } from "../Theme";
 import ButtonMap from "../Location/ButtonMap";
+import Footer from "../../Footer";
 
 const center = { lat: 1.318768530876835, lng: 103.84333604171032 };
 
@@ -287,6 +288,7 @@ const Location = () => {
           </Box>
         </Box>
       </Box>
+      <Footer/>
     </div>
   );
 }

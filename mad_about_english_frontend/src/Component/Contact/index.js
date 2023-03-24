@@ -4,6 +4,7 @@ import { Box, TextField, useMediaQuery, useTheme } from "@mui/material";
 import { BlueFont, Required } from "../Theme";
 import { ThemeProvider } from "@mui/material/styles";
 import ButtonMap from "../Location/ButtonMap";
+import Footer from "../../Footer";
 import axios from "axios";
 
 const Contact = () => {
@@ -143,7 +144,10 @@ const Contact = () => {
                 <TextField
                   name="message"
                   onChange={handleChange}
-                  style={{ width: isMatch ? "250px" : "770px", margin: "5px" }}
+                  style={{
+                    width: isMatch ? "250px" : "770px",
+                    margin: "5px",
+                  }}
                   label="Message"
                   multiline
                   rows={5}
@@ -166,6 +170,16 @@ const Contact = () => {
             </Box>
           </form>
         </Box>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          margin: 2
+        }}
+      >
+        <Footer />
       </Box>
     </>
   );
